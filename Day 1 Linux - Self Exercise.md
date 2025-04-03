@@ -78,9 +78,6 @@ Learn how to monitor system processes and view logs.
 3. **Start, stop, restart, enable, and disable a web server (Apache/Nginx).**  
    - Use the `systemctl` command.  
 
-4. **Check system logs.**  
-   - Use `journalctl -u <service>` for a specific service.  
-
 ---
 
 ## **Part 5: Basic Commands**  

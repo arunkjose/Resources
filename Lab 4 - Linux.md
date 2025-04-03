@@ -2,33 +2,89 @@
 
 ---
 
-## **Lab 4: Process Management**  
+## **Lab 4: Process Management**  .  
 
-### **Task 1: Working with Linux Processes**  
-
-#### **1. Kill Background Processes**  
-```bash
-jobs  
-kill <PID>  
-```
-- Find **PID** using `ps` or `jobs`.  
-
-#### **2. View Running Processes**  
+#### **1. View Running Processes**  
 ```bash
 ps  
 ps all  
 ps aux  
 ```
+# **Ubuntu Nginx & Apache2 Installation Cheat Sheet**  
 
-#### **3. Search for a Specific Process & Kill It**  
-```bash
-ps aux | grep cat  
-kill <PID>  
+## **1. Update Package Lists**
+```sh
+sudo apt update
+sudo apt upgrade -y
 ```
-- `kill <PID>` → Terminates the process.  
 
 ---
 
+## **2. Install Nginx**
+### Install & Start
+```sh
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+### Check Status & Reload
+```sh
+sudo systemctl status nginx
+sudo systemctl reload nginx  # Reload config without stopping service
+```
+### Verify Installation
+```sh
+nginx -v  # Check version
+```
+
+---
+
+## **3. Install Apache2**
+### Install & Start
+```sh
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+```
+### Check Status & Restart
+```sh
+sudo systemctl status apache2
+sudo systemctl restart apache2
+sudo systemctl reload apache2  # Reload config without stopping service
+```
+### Verify Installation
+```sh
+apache2 -v  # Check version
+```
+---
+
+## **4. Common APT & APT-GET Operations**
+### **Package Management**
+```sh
+sudo apt update          # Update package lists
+sudo apt upgrade -y      # Upgrade installed packages
+sudo apt autoremove -y   # Remove unnecessary dependencies
+sudo apt clean           # Clear package cache
+```
+### **Install & Remove Packages**
+```sh
+sudo apt install <package_name> -y   # Install a package
+sudo apt remove <package_name> -y    # Remove a package (keeps config files)
+sudo apt purge <package_name> -y     # Remove package & config files
+```
+### **Search & Information**
+```sh
+apt search <package_name>     # Search for a package
+apt show <package_name>       # Show package details
+```
+### **Service Management**
+```sh
+sudo systemctl start <service_name>   # Start a service
+sudo systemctl stop <service_name>    # Stop a service
+sudo systemctl restart <service_name> # Restart a service
+sudo systemctl enable <service_name>  # Enable auto-start
+sudo systemctl disable <service_name> # Disable auto-start
+```
 ### **Task 2: Working with System Services**  
 
 #### **Basic `systemctl` Commands**  
@@ -45,31 +101,31 @@ kill <PID>
 
 #### **1. Check the Status of the Web Server (Apache or Nginx)**  
 ```bash
-systemctl status httpd  # For Apache  
+systemctl status apache2  # For Apache  
 systemctl status nginx  # For Nginx  
 ```
 
 #### **2. Stop & Disable the Web Server**  
 ```bash
-systemctl stop httpd  # For Apache  
-systemctl disable httpd  
+systemctl stop apache2  # For Apache  
+systemctl disable apache2  
 
 systemctl stop nginx  # For Nginx  
 systemctl disable nginx  
 
-systemctl status httpd  # Check status after stopping  
+systemctl status apache2  # Check status after stopping  
 systemctl status nginx  
 ```
 
 #### **3. Start & Enable the Web Server**  
 ```bash
-systemctl start httpd  
-systemctl enable httpd  
+systemctl start apache2  
+systemctl enable apache2  
 
 systemctl start nginx  
 systemctl enable nginx  
 
-systemctl status httpd  
+systemctl status apache2  
 systemctl status nginx  
 ```
 
@@ -168,32 +224,3 @@ cd /var/log
 
 ---
 
-### **2. Using `journalctl` (Systemd Logs)**  
-
-#### **Basic Commands**  
-```bash
-journalctl        # View system logs  
-journalctl -u httpd  # View logs for Apache  
-journalctl -u nginx  # View logs for Nginx  
-journalctl -b    # View logs since last boot  
-journalctl -f    # View last 10 log entries (follow live updates)  
-```
-
----
-
-## **Quick Command Reference**  
-
-| **Command** | **Description** |
-|------------|----------------|
-| `jobs` | View background jobs |
-| `fg %1` | Bring job to foreground |
-| `kill <PID>` | Kill a process |
-| `ps aux | grep <process>` | Find a process |
-| `systemctl status httpd` | Check Apache web server status |
-| `systemctl status nginx` | Check Nginx web server status |
-| `top` | Monitor system processes |
-| `htop` | Visual process monitoring |
-| `journalctl -b` | View logs since last boot |
-| `cd /var/log && ls -l` | View system logs |
-
----

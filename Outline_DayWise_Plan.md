@@ -22,12 +22,12 @@
 ### Day-2: Linux Advanced 
 
 * Networking:
-    * Checking network configuration: ip, ifconfig, netstat, ss
+    * Checking network configuration: ip, ifconfig, netstat, ss, ping
     * SSH Remote Connectivity
 * Storage-and-Disk-Management:
     * Mounting and unmounting file systems: mount, umount
-    * Working with disks & partitions: fdisk, lsblk, df -h, du -sh
-    * Filesystem Types: ext4, XFS, NFS, CIFS, FAT32, NTFS
+    * Working with disks & partitions: fdisk, lsblk, df -h
+    * Filesystem Types: ext4, XFS
 * Job Scheduling:
      * Crontab
 * Archival & Compression:

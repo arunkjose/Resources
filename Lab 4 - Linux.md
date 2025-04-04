@@ -2,7 +2,7 @@
 
 ---
 
-## **Lab 3: Linux Storage**  
+## **Lab: Linux Storage**  
 
 ### **Task 1: Create an Additional Primary Partition on Linux**  
 

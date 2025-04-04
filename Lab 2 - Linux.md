@@ -1,7 +1,10 @@
 # **Linux User & Group Management Cheat Sheet**
 
 ---
-
+Switch to root user
+```
+sudo su
+```
 ## **Task 1: Managing Users**  
 
 ### **1. Add Users**

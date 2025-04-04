@@ -70,12 +70,9 @@ Learn how to monitor system processes and view logs.
 
 ### **Tasks:**  
 1. **List all currently running processes.**  
-   - Use the `ps aux` command.  
+   - Use the `ps aux` command. 
 
-2. **Find and terminate a process.**  
-   - Use the `ps aux | grep <process>` and `kill <PID>` commands.  
-
-3. **Start, stop, restart, enable, and disable a web server (Apache/Nginx).**  
+2. **Start, stop, restart, enable, and disable a web server (Apache/Nginx).**  
    - Use the `systemctl` command.  
 
 ---
@@ -90,26 +87,11 @@ Practice using fundamental Linux commands for navigation and file operations.
 1. **Display the current directory path.**  
    - Use the `pwd` command.  
 
-2. **List all files in `~/lab` and its subdirectories in a tree structure.**  
-   - Use the `tree ~/lab` command (install `tree` if needed).  
-
-3. **Display detailed information about all files in `dir2`.**  
-   - Use the `ls -l ~/lab/dir2` command.  
-
-4. **Search for the word "test" in `file3.txt`.**  
-   - First, add text to the file using `echo "This is a test" >> file3.txt`.  
-   - Then, use the `grep "test" file3.txt` command.  
-
-5. **Create a new file using Vi and Nano.**  
-   - Open Vi and create `testfile.txt` using `vi testfile.txt`.  
-   - Add text and save it (`i` to insert, `Esc` to exit insert mode, `:wq` to save and exit).  
-   - Open Nano and create `testfile.txt` using `nano testfile.txt`.  
-   - Add text and save it (`Ctrl + X`, then `Y`, then `Enter`).  
-
+2. **Display detailed information about all files in `dir2`.**  
+   - Use the `ls -l ~/lab/dir2` command.   
 ---
 ### **Bonus Challenges (Optional)**  
 * Verify the changes using `ls -l` after each step.
-* Use `cat`, `nano`, or `echo` to add content to the files.  
 * Try logging in as `user1` and `user2` to test their access permissions.  
 
 ---

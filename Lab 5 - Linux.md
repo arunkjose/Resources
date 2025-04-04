@@ -1,6 +1,5 @@
 ---
 
-
 # **Cron Job Cheatsheet (Linux Job Scheduling)**
 
 ## Basics
@@ -15,7 +14,7 @@
   │ │ │ └─── Month (1 - 12)
   │ │ └───── Day of month (1 - 31)
   │ └─────── Hour (0 - 23)
-  └───────── Minute (0 - 59)
+  └─────────Minute (0 - 59)
   ```
 
 ---

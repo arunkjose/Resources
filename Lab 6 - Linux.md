@@ -57,12 +57,12 @@ netstat -i
 
 ## `ss` – Socket statistics (modern alternative to `netstat`)
 
-### 🔹 Show all TCP connections:
+### Show all TCP connections:
 ```bash
 ss -t -a
 ```
 
-### 🔹 Show all listening connections (TCP & UDP):
+### Show all listening connections (TCP & UDP):
 ```bash
 ss -tuln
 ```

@@ -35,3 +35,13 @@
      * gzip
      * bzip
      * xz
+### Day-3: Introduction to Virtualization & Cloud Computing
+
+* Virtualization- Definition, Benefits
+* Hypervisor & its types
+* Virtual Machine & its benefits
+* Storage Fundamentals: DAS, NAS, SAN
+* Block vs File vs Object Storage
+* Cloud Computing - Definition, Benefits
+* Types of Cloud - Public, Private, Hybrid, Multi
+* Types of Cloud Models - Iaas, Paas, Saas

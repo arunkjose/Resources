@@ -45,3 +45,21 @@
 * Cloud Computing - Definition, Benefits
 * Types of Cloud - Public, Private, Hybrid, Multi
 * Types of Cloud Models - Iaas, Paas, Saas
+
+### Day-4: Introduction to Shell Scripting
+
+* What is shell scripting
+* Purpose/Use cases of shell scripting
+* Concepts:
+   * Shebang
+   * variables
+   * user input
+   * Conditional statements
+   * loops
+   * functions
+   * command line arguments
+   * exit code
+   * basic file checks
+   * Best practices: set -exo pipeline
+   * curl, find, awk,grep commands
+   * Real time shell script examples

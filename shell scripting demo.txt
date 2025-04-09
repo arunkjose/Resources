@@ -1,0 +1,120 @@
+#!/bin/bash
+
+echo "#############"
+echo "# Author: Komal"
+echo "# Version: v1"
+echo "# DEscription: This script prints a message"
+echo "############"
+
+echo "hello world"
+
+echo "#############"
+echo "Variables"
+greeting="hello"
+echo $greeting
+echo "#############"
+
+echo "#############"
+echo "Command Subs"
+now=$(date)
+echo " Current timestamp: $now"
+echo "#############"
+
+
+echo "#############"
+echo "User input"
+read -p "What is your name:" name
+echo "The name is: $name"
+echo "#############"
+
+
+ubuntu@ip-172-31-4-184:~$ cat conditionalst.sh
+#!/bin/bash
+
+
+echo "###########"
+
+read -p "enter a number:" num
+
+if [ $num -gt 10 ]; then
+        echo "greater than 10"
+elif [ $num -eq 10 ]; then
+        echo "number equal to 10"
+else
+        echo "Less than 10"
+fi
+
+ubuntu@ip-172-31-4-184:~$ cat function.sh
+#!/bin/bash
+
+
+echo "##########"
+echo "Using functions"
+
+
+greet() {
+
+echo "Hello, $1"
+}
+
+
+greet "bob" 
+
+
+ubuntu@ip-172-31-4-184:~$ cat nodehealth.sh
+#!/bin/bash
+
+
+echo "##########"
+echo "Author:Komal"
+echo "Date:9/4/25"
+echo "##########"
+echo "The script will output vm health"
+echo "Version:2"
+echo "##########"
+
+set -x
+free -g
+
+nproc
+
+df -h
+
+
+ubuntu@ip-172-31-4-184:~$ cat script2.sh
+#!/bin/bash
+
+set -e
+
+
+echo "hello"
+dfhjfhjhhfsh
+free -g
+
+
+ubuntu@ip-172-31-4-184:~$ cat script.sh
+#!/bin/bash
+
+
+echo "######"
+My name is bob
+My dept is HR
+
+
+ps -ef
+   78  ps -ef | grep "amazon"
+   79  ps -ef | grep "amazon" | awk -F" " '{print $2}'
+   80  ps -ef | grep "amazon" | awk -F" " '{print $1}'
+   81  vi script.sh
+   82  clear
+   83  cat script.sh
+   84  cat script.sh | grep "name"
+   85  cat script.sh | grep "my"
+   86  cat script.sh | grep "My"
+   87  cat script.sh | awk -F" " '{print $4}'
+   88  cat script.sh | awk -F" " '{print $1}'
+
+
+
+
+

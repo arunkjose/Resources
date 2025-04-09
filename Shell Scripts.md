@@ -76,7 +76,7 @@ fi
 chmod +x script3.sh
 ```
 ```
-sudo ./ script3.sh
+sudo ./script3.sh
 ```
 
 ### Script4: Update system & Install packages

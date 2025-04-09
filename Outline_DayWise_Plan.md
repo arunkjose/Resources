@@ -59,7 +59,6 @@
    * functions
    * command line arguments
    * exit code
-   * basic file checks
-   * Best practices: set -exo pipeline
+   * Best practices: set -ex
    * curl, find, awk,grep commands
    * Real time shell script examples

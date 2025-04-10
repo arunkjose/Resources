@@ -1,7 +1,7 @@
 
 ---
 
-# ✅ **Solutions: Azure CLI Self Exercises**
+# **Solutions: Azure CLI Self Exercises**
 
 ---
 

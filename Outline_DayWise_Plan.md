@@ -62,3 +62,21 @@
    * Best practices: set -ex
    * curl, find, awk,grep commands
    * Real time shell script examples
+ 
+### Day 5: Azure Fundamentals & Azure VM
+   * What is Microsoft Azure
+   * Azure Global Infrastructure:
+        * Azure Regions
+        * Zone Redundant Regions
+        * Azure Sovereign Regions
+        * Azure Region Pairs
+        * Availability Zones
+        * Azure Availability Set
+        * Azure Subscription
+        * Resources & Resource Groups
+        * Management Groups
+        * Azure Tenant
+        * Azure Portal & Ways to Access it
+        * Azure Cloud Shell
+        * Azure Virtual Machine
+        * Lab : Azure VM Creation

@@ -79,4 +79,5 @@
         * Azure Portal & Ways to Access it
         * Azure Cloud Shell
         * Azure Virtual Machine
+        * Spot Instance
         * Lab : Azure VM Creation

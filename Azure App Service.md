@@ -1,0 +1,92 @@
+
+---
+
+# 🛠Steps to Create Azure App Service Plan & Web App
+
+---
+
+## Step 1: Sign In to Azure Portal
+
+- Go to [https://portal.azure.com](https://portal.azure.com)
+- Sign in with your Azure credentials
+
+---
+
+## Step 2: Create an App Service Plan
+
+1. **Search** for **"App Service plans"** in the top search bar
+2. Click **+ Create** (or **+ Add**)
+
+### Fill in the Basics:
+- **Subscription**: Select your subscription
+- **Resource Group**: Create new or select an existing one
+- **Name**: `MyLinuxS2Plan` (any unique name)
+- **Operating System**: Choose **Linux** 
+- **Region**: Select a region (e.g., **Central India**)
+- **SKU and Size**:
+  - Click **Change size**
+  - Select a **Pricing Tier** (e.g., **Standard S2** under Production)
+  - Click **Apply**
+
+3. Click **Review + Create**
+4. Click **Create**
+
+**App Service Plan is now created.**
+
+---
+
+## Step 3: Create an Azure App Service (Web App)
+
+1. **Search** for **"App Services"**
+2. Click **+ Create**
+
+### Fill in the Basics:
+- **Subscription**: Choose your subscription
+- **Resource Group**: Select the same as used for App Service Plan
+- **Name**: `my-linux-webapp-123` *(must be globally unique)*
+- **Publish**: **Code**
+- **Runtime Stack**: Choose according to your application (PHP)
+- **Operating System**: **Linux** 
+- **Region**: Must be same as the App Service Plan (e.g., **Central India**)
+
+### App Service Plan:
+- Click **"App Service Plan" > "Browse"**
+- Select the plan you created earlier (`MyLinuxS2Plan`)
+
+3. Click **Review + Create**
+4. Click **Create**
+
+**Web App is now deployed.**
+
+---
+## Step 4: Connect App Service to GitHub via Deployment Center
+
+1. In the Azure Portal, go to **App Services**
+2. Select your web app: `my-linux-webapp-123`
+3. In the left-hand menu, scroll down and click **Deployment Center**
+
+### Configure GitHub Integration:
+
+4. Under **Source**, select **GitHub**
+5. Click **Authorize AzureAppService** if prompted (log into GitHub and allow permissions)
+6. Choose:
+   - **Organization**: Your GitHub username/org
+   - **Repository**: Select your repo
+   - **Branch**: `main` or `master` or your working branch
+
+7. Click **Save**
+
+Azure will now automatically pull code from GitHub and deploy it.
+
+---
+
+## Step 5: Verify Deployment
+
+1. Go back to the **App Overview** tab
+2. Click the **Default domain URL**:
+   ```
+   https://my-linux-webapp-123.azurewebsites.net
+   ```
+3. Your GitHub-hosted site should now be live!
+
+---

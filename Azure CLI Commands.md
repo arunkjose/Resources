@@ -20,6 +20,7 @@ az vm create \
   --resource-group myResourceGroup \
   --name myLinuxVM \
   --image UbuntuLTS \
+  -- size Standard_B1s \
   --admin-username azureuser \
   --generate-ssh-keys
 ```

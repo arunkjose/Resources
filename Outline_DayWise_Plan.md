@@ -71,6 +71,7 @@
         * Azure Sovereign Regions
         * Azure Region Pairs
         * Availability Zones
+        * Virtual Machine Scale Sets
         * Azure Availability Set
         * Azure Subscription
         * Resources & Resource Groups

@@ -34,7 +34,7 @@ az vm create \
 
 ---
 
-## Step 3: Connect to the VM
+## Connect to the VM
 
 Once the VM is created, Azure CLI will output the **public IP address**.
 

@@ -1,14 +1,9 @@
 ---
-
+---
 ## **1. Create a Resource Group**
-
 ```bash
 az group create --name myResourceGroup --location eastus
 ```
-
-- `--name` → Name of the Resource Group.
-- `--location` → Azure Region (e.g., eastus, centralindia).
-
 ---
 
 ## **2. List Resource Groups**

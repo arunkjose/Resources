@@ -1,7 +1,7 @@
 
 ---
 
-# 🛠Steps to Create Azure App Service Plan & Web App
+# Steps to Create Azure App Service Plan & Web App
 
 ---
 

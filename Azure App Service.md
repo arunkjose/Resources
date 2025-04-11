@@ -19,13 +19,13 @@
 
 ### Fill in the Basics:
 - **Subscription**: Select your subscription
-- **Resource Group**: Create new or select an existing one
-- **Name**: `MyLinuxS2Plan` (any unique name)
+- **Resource Group**: Create new :paas-demo
+- **Name**: 'webserver-plan'
 - **Operating System**: Choose **Linux** 
-- **Region**: Select a region (e.g., **Central India**)
+- **Region**: Central Us
 - **SKU and Size**:
   - Click **Change size**
-  - Select a **Pricing Tier** (e.g., **Standard S2** under Production)
+  - Select a **Pricing Tier** : Premium v3
   - Click **Apply**
 
 3. Click **Review + Create**
@@ -47,11 +47,11 @@
 - **Publish**: **Code**
 - **Runtime Stack**: Choose according to your application (PHP)
 - **Operating System**: **Linux** 
-- **Region**: Must be same as the App Service Plan (e.g., **Central India**)
+- **Region**: Must be same as the App Service Plan (e.g., **Central US**)
 
 ### App Service Plan:
-- Click **"App Service Plan" > "Browse"**
-- Select the plan you created earlier (`MyLinuxS2Plan`)
+- Click **"App Service Plan" > "Browse"** 
+- Select the plan you created earlier 
 
 3. Click **Review + Create**
 4. Click **Create**
@@ -62,7 +62,7 @@
 ## Step 4: Connect App Service to GitHub via Deployment Center
 
 1. In the Azure Portal, go to **App Services**
-2. Select your web app: `my-linux-webapp-123`
+2. Select your web app
 3. In the left-hand menu, scroll down and click **Deployment Center**
 
 ### Configure GitHub Integration:
@@ -72,7 +72,7 @@
 6. Choose:
    - **Organization**: Your GitHub username/org
    - **Repository**: Select your repo
-   - **Branch**: `main` or `master` or your working branch
+   - **Branch**: `main` or your working branch
 
 7. Click **Save**
 
@@ -82,11 +82,9 @@ Azure will now automatically pull code from GitHub and deploy it.
 
 ## Step 5: Verify Deployment
 
-1. Go back to the **App Overview** tab
-2. Click the **Default domain URL**:
-   ```
-   https://my-linux-webapp-123.azurewebsites.net
-   ```
+1. Go back to the **Deployement Center**  tab
+2. Click on browser
+
 3. Your GitHub-hosted site should now be live!
 
 ---

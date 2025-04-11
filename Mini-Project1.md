@@ -18,7 +18,7 @@
    - **Image**: Select `Windows Server 2019 Datacenter` (or 2022)
    - **Size**: Choose a basic size (e.g., B1s for demo)
    - **Administrator account**: Enter username and password (note these for RDP)
-   - **Public inbound ports**: Allow selected ports → Check **RDP (3389)**
+   - **Public inbound ports**: Allow selected ports → Check **RDP (3389) + Http (80)**
 4. Click **Next** through other tabs, then click **Review + Create**
 5. Wait for deployment to complete and click **Go to Resource**
 

@@ -60,8 +60,8 @@
    * command line arguments
    * exit code
    * Best practices: set -ex
-   * curl, find, awk,grep commands
-   * Real time shell script examples
+   * curl, find, awk, grep commands
+   * Real-time shell script examples
  
 ### Day 5: Azure Fundamentals & Azure VM
    * What is Microsoft Azure
@@ -81,4 +81,9 @@
         * Azure Cloud Shell
         * Azure Virtual Machine
         * Spot Instance
-        * Lab : Azure VM Creation
+        * Lab: Azure VM Creation
+### Day 6: Azure App Service
+        * Mini Project 1: Hosting a website using IAAS
+        * Azure App Service Plans - Concept & Lab
+        * Azure App Service - Concept & Lab 
+        * Mini Project 2: Automating Creation of RG & VM on Azure using shell scripting

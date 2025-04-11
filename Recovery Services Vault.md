@@ -3,8 +3,9 @@
 ## **LAB: Backup a VM using Recovery Services Vault**
 
 ### Scenario:
+----
 You're managing a web server VM in Azure. The company wants **daily backups** of this VM for disaster recovery.
-
+---
 We'll:
 1. Create a Recovery Services Vault  
 2. Register the VM for backup  

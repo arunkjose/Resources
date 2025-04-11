@@ -1,12 +1,9 @@
 ---
-
-# **Azure Storage Lab **
-
+# **Azure Storage Lab**
 ### **Scenario: Startup Product Catalog System**
-
-You're working at a small startup that sells handmade items online.  
-You’re tasked with setting up cloud storage for:
-
+---
+You're working at a small startup that sells handmade items online.You’re tasked with setting up cloud storage for:
+---
 - **Product images (JPGs)**
 - **Order reports (CSVs)**  
 The system should:

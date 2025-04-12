@@ -131,7 +131,7 @@
 
 ### **Summary of the Lab**
 - You created a **Function App** in the **Azure Portal**.
-- You deployed an **HTTP-triggered function** and tested it by passing query parameters via a browser or Postman.
+- You deployed an **HTTP-triggered function** and tested it by passing query parameters via a browser.
 - You enabled **Application Insights** to monitor your function’s performance.
 
 ---

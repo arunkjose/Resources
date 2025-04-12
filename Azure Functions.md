@@ -17,14 +17,22 @@
    - In the left sidebar, click **Create a resource**.
    - In the **Search the Marketplace** box, type **Function App** and click on **Function App** from the results.
    - Click **Create**.
-   
+   Hosting Plan (this is where it asks for the Hosting Plan):
+
+**Hosting Plan: You will be prompted to select a hosting plan.**
+
+Choose 'Consumption Plan' (recommended for serverless, pay-per-use) unless you need dedicated resources or premium features.
+Consumption Plan is the default and suitable for most scenarios if you're just testing or starting out.
+
 3. **Configure the Function App**:
    - **Subscription**: Choose your Azure subscription.
-   - **Resource Group**: Either select an existing resource group or create a new one.
+   - **Resource Group**: Create New: Function-demo
    - **Function App Name**: Enter a globally unique name (e.g., `my-first-function-app`).
-   - **Publish**: Select **Code**.
    - **Runtime Stack**: Choose **Node.js** for JavaScript or **Python**, based on your preference.
-   - **Region**: Choose the region closest to you.
+   - **Region**: Central Us
+   - **OS**: Linux
+   - Go to Monitoring Section: Enable Application Insights and leave everything to default.
+
    
 4. **Review and Create**:
    - Click **Next** through the tabs until you reach the **Review + Create** section.

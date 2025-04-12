@@ -1,4 +1,4 @@
-Setting Up and Testing Azure Functions with HTTP Trigger and Timer Trigger
+## Setting Up and Testing Azure Functions with HTTP Trigger and Timer Trigger
 
 This lab will guide you through setting up the environment for running Azure Functions locally with **Visual Studio Code (VS Code)**, **Azure Functions Extension**, **Azure Functions Core Tools**, and **Azure Storage Account**. You will then create and test two types of Azure Functions: **HTTP Trigger** and **Timer Trigger**.
 

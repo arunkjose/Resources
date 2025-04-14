@@ -3,7 +3,7 @@
 ## **Lab: Azure Data Lake Storage Gen2**
 
 ### **Scenario: Marketing Analytics for a Startup**
-
+---
 You're part of a marketing team that collects:
 - **Website traffic logs** (`.csv`)
 - **Social media campaign images** (`.jpg`, `.png`)
@@ -48,12 +48,13 @@ Your job is to create a **centralized data lake** to store this structured and u
 2. Fill in **Basics**:
    - **Subscription**: Free Trial
    - **Resource Group**: `datalake-lab-rg`
-   - **Storage Account Name**: `datalakemarketingXYZ` *(must be globally unique)*
+   - **Storage Account Name**: `datalakemarketingx1z` *(must be globally unique)*
    - **Region**: Central US
    - **Performance**: Standard
+   - **Primary Service**: Others
    - **Redundancy**: Locally Redundant Storage (LRS)
 3. Click on the **Advanced** tab:
-   - Scroll to **Data Lake Storage Gen2**
+   - Scroll to **Hierarchical namespace**
    - Enable **Hierarchical namespace** → set to **Yes**
 4. Click **Review + Create** → **Create**
 
@@ -61,12 +62,13 @@ Your job is to create a **centralized data lake** to store this structured and u
 
 ### **Step 3: Create a Container for Raw Data**
 
-1. After the storage account is deployed → Open it
-2. From the left-hand menu → Click **Containers**
-3. Click **+ Container**
+1. After the storage account is deployed, → Open it
+2. From the left-hand menu → Click **Settings** -> **Configuration** -> Enable 'Allow Blob anonymous access' -> Save
+3. From the left-hand menu → Click **Containers**
+4. Click **+ Container**
    - Name: `raw-marketing-data`
    - Public Access: **Private (no anonymous access)**
-4. Click **Create**
+5. Click **Create**
 
 ---
 
@@ -92,23 +94,11 @@ Your job is to create a **centralized data lake** to store this structured and u
    ```
    https://datalakemarketingxyz.blob.core.windows.net/raw-marketing-data/web-traffic.csv
    ```
-> Access is private, so unless access is changed or app uses a key, the URL won’t work for public access
+> Access is private, so unless access is changed  the URL won’t work for public access
 
 ---
 
-### **Step 6: Explore Using Azure Storage Explorer (Optional)**
-
-1. Download and install **Azure Storage Explorer**:  
-   https://azure.microsoft.com/en-us/products/storage/storage-explorer/
-2. Sign in with your Azure account
-3. Navigate to:
-   - Storage Accounts → (Your subscription) → `datalakemarketingXYZ`
-   - Open **Blob Containers** → `raw-marketing-data`
-4. You can upload/download files and create folder structures here
-
----
-
-### **Step 7: (Optional) Enable Lifecycle Management**
+### **Step 6: (Optional) Enable Lifecycle Management**
 
 If you want to simulate auto-tiering of older data:
 
@@ -125,7 +115,7 @@ If you want to simulate auto-tiering of older data:
 
 ---
 
-### **Step 8: Clean Up to Avoid Charges**
+### **Step 7: Clean Up to Avoid Charges**
 
 1. Go to **Resource Groups** from the portal home
 2. Search for `datalake-lab-rg`

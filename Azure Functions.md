@@ -71,7 +71,7 @@ azurite
    - **Language**: JavaScript  
    - **Trigger**: HTTP Trigger  
    - **Function Name**: `HttpTriggerFunction`
-Note: Rename the httptrigger1.js to index.js because Azure functions looks for a file with the same name.
+- Note: Rename the httptrigger1.js to index.js because Azure functions looks for a file with the same name.
 #### Replace Code in `index.js`:
 
 ```javascript

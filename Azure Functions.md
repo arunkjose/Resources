@@ -84,7 +84,7 @@ azurite
 2. **Modify the HTTP Trigger Code**:
    Update the code in `HttpTriggerFunction.js` to the following:
 
-   ```javascript
+   ```
    module.exports = async function (context, req) {
        context.log('JavaScript HTTP trigger function processed a request.');
 
@@ -123,13 +123,27 @@ HTTP Output: The function returns a response that will be captured as $return.
 
 **Note: If you see any file called index.js delete it.**
 
-Modify the contents of file host.json:
+Modify the contents of file host.json
 ```
 {
   "version": "2.0"
 }
 ```
-
+package.json
+```
+{
+  "name": "httptriggerproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start bob",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    
+}
+}
+```
 4. **Test the Function Locally**:
    - Press **F5** to run the function locally.
    - Open your browser and go to `http://localhost:7071/api/HttpTriggerFunction?name=John`.

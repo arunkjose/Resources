@@ -13,7 +13,7 @@ Your job is to create a **centralized data lake** to store this structured and u
 - Create a Data Lake Gen2-enabled Storage Account  
 - Create containers/folders  
 - Upload and access files  
-- Access endpoints and tools  
+- Access endpoints 
 - Clean up to avoid charges
 
 ---
@@ -94,28 +94,11 @@ Your job is to create a **centralized data lake** to store this structured and u
    ```
    https://datalakemarketingxyz.blob.core.windows.net/raw-marketing-data/web-traffic.csv
    ```
-> Access is private, so unless access is changed  the URL won’t work for public access
+> Access is private, so unless access is changed,  the URL won’t work for public access
 
 ---
 
-### **Step 6: (Optional) Enable Lifecycle Management**
-
-If you want to simulate auto-tiering of older data:
-
-1. In your Storage Account → Left menu → **Lifecycle Management**
-2. Click **+ Add a rule**
-3. Name: `auto-tier-old-data`
-4. Scope: All blobs
-5. Rule:
-   - Move blob to **Cool** after 30 days
-   - (Optional) Move to **Archive** after 90 days
-6. Click **Add**
-
-> These rules simulate long-term cost savings.
-
----
-
-### **Step 7: Clean Up to Avoid Charges**
+### **Step 6: Clean Up to Avoid Charges**
 
 1. Go to **Resource Groups** from the portal home
 2. Search for `datalake-lab-rg`
@@ -134,7 +117,5 @@ By the end of this lab, you now understand:
 | **Containers** | Created to logically separate raw marketing data |
 | **Accessing Data** | Viewed properties and tested download |
 | **Endpoint URLs** | Learned how apps/tools can use file URLs |
-| **Azure Storage Explorer** | Optional tool for interacting visually |
-| **Lifecycle Management** | Set auto-move to cooler tiers for cost optimization |
 
 ---

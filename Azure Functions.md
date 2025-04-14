@@ -219,7 +219,8 @@ tsconfig.json
 
 **Verify Folder Structure**  
 ![Timer Project Structure](https://github.com/user-attachments/assets/227b8e59-48ea-44cc-a943-ee6abfeb10d8)
-Rename the main folder: timertriggerproject under which index.js and function.json should be present.
+
+Rename the main folder to timertriggerproject, under which index.js and function.json should be present.
 ---
 
 ### Test Timer Function Locally

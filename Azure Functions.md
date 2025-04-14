@@ -264,8 +264,8 @@ To include the steps for creating a Function App on Azure before deploying the T
 
 1. **Access Storage Account Keys**:
    - In the Azure Portal, go to your **Storage Account**.
-   - Under the **Settings** section, click **Access keys**.
-   - Copy **Key1** (or **Key2** if you prefer).
+   - Under the **Security + Networking** section, click **Access keys**.
+   - Copy **Key1** 
 
 2. **Get the Connection String**:
    - Below the key details, you'll see the **Connection string**. Copy this connection string.
@@ -277,11 +277,11 @@ Without the AzureWebJobsStorage setting, Azure Functions wouldn't have access to
 
 1. **Go to Your Function App**:
    - In the **Azure Portal**, navigate to your **Function App**.
-   - Under the **Settings** section, click on **Configuration**.
+   - Under the **Settings** section, click on **Environment Variables**.
 
 2. **Add `AzureWebJobsStorage` Setting**:
-   - Click **+ New application setting**.
-   - Set the **Name** to `AzureWebJobsStorage`.
+   - Click **+Add**.
+   - Set the **Name** to AzureWebJobsStorage
    - Paste the **Connection String** you copied from the Storage Account.
    - Click **OK**.
 
@@ -289,6 +289,8 @@ Without the AzureWebJobsStorage setting, Azure Functions wouldn't have access to
    - Click **Save** at the top to apply the changes.
 
 ---
+![image](https://github.com/user-attachments/assets/2213351c-4a09-42a5-996e-29600e8eb5f7)
+
 
 #### **Step 4: Deploy the Function to Azure**
 
@@ -315,7 +317,7 @@ Once the function is deployed to Azure, you'll need to test both the HTTP Trigge
 
 1. **Test the HTTP Trigger**:
    - After deployment, Azure will provide you with a **URL** for the HTTP trigger.
-   - Use browser to make a request to the HTTP trigger endpoint.
+   - Use the browser to make a request to the HTTP trigger endpoint.
    - You should get a response, such as a `200 OK` with any additional output defined in your function.
 
 2. **Monitor the Timer Trigger**:
@@ -324,6 +326,8 @@ Once the function is deployed to Azure, you'll need to test both the HTTP Trigge
    - Under **Functions**, find your `TimerFunction`.
    - Go to **Monitor** or **Logs** to check when the function is being triggered. You should see logs corresponding to the timestamps for each trigger.
 ---
+![image](https://github.com/user-attachments/assets/bd0be5d3-3993-4ad9-8cc3-e5f919788956)
+
 
 ### **Summary**
 

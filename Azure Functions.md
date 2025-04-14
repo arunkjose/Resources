@@ -71,8 +71,8 @@ azurite
    - **Language**: JavaScript  
    - **Trigger**: HTTP Trigger  
    - **Function Name**: `HttpTriggerFunction`
-
-#### Replace Code in `HttpTriggerFunction.js`:
+Note: Rename the httptrigger1.js to index.js because Azure functions looks for a file with the same name.
+#### Replace Code in `index.js`:
 
 ```javascript
 module.exports = async function (context, req) {
@@ -80,30 +80,34 @@ module.exports = async function (context, req) {
 
     const name = req.query.name || (req.body && req.body.name);
     context.res = {
+        status: 200,
         body: name ? `Hello, ${name}!` : 'Hello, world!'
     };
 };
 ```
 
+#### Rename the main folder: httptriggerproject, under which index.js and function.json should be present.
+
 #### Create and update `function.json`:
 
 ```json
 {
-  "bindings": [
-    {
-      "authLevel": "anonymous",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "request",
-      "methods": ["get", "post"]
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "$return"
-    }
-  ]
-}
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": ["get", "post"]
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      }
+    ],
+    "scriptFile": "index.js"  
+  }
 ```
 
 #### Modify or create `host.json`:
@@ -215,7 +219,7 @@ tsconfig.json
 
 **Verify Folder Structure**  
 ![Timer Project Structure](https://github.com/user-attachments/assets/227b8e59-48ea-44cc-a943-ee6abfeb10d8)
-
+Rename the main folder: timertriggerproject under which index.js and function.json should be present.
 ---
 
 ### Test Timer Function Locally

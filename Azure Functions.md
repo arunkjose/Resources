@@ -43,18 +43,15 @@ This lab will guide you through setting up the environment for running Azure Fun
 2. **Install Azure Functions Core Tools**:
    - Open your **Command Prompt** (Windows) or **Terminal** (macOS/Linux).
    - Run the following command to install **Azure Functions Core Tools** globally:
-
-     ```bash
+     ```
     npm install -g azure-functions-core-tools@4 --unsafe-perm true
      ```
 
 3. **Verify the Installation**:
    - Run the following command to verify the installation:
-
-     ```bash
+     ```
      func --version
      ```
-
    - You should see the installed version of **Azure Functions Core Tools**.
 ![image](https://github.com/user-attachments/assets/34a06a21-3854-4cad-be4c-739d0c120a7c)
 

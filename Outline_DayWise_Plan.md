@@ -96,20 +96,18 @@
      * Replication Strategies - LRS,ZRS,GRS,RA-GRS,GZRS, RA-GZRS
      * Lab: Container & File Share
   * Recovery Services Vault
-  * Introduction, Use Cases, Features
-  * Lab: VM Recovery and File Recovery
+     * Introduction, Use Cases, Features
+     * Lab: VM Recovery and File Recovery
 ### Day 8: Azure Functions & Azure Data Lake
    * Azure Functions
       * Serverless vs PaaS
       * Features
-      * Usecases
+      * Use cases
       * Trigger types
-      * Lab: Http and timer trigger
+      * Lab: HTTP and timer trigger
    * Azure Data Lake
       * DB vs Data warehouse vs Data lake
       * Features
       * Use Cases
       * Lab
-   * 
-  *  
-  * 
+   

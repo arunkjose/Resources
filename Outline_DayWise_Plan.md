@@ -83,7 +83,33 @@
         * Spot Instance
         * Lab: Azure VM Creation
 ### Day 6: Azure App Service
-        * Mini Project 1: Hosting a website using IAAS
-        * Azure App Service Plans - Concept & Lab
-        * Azure App Service - Concept & Lab 
-        * Mini Project 2: Automating Creation of RG & VM on Azure using shell scripting
+   * Mini Project 1: Hosting a website using IAAS
+   * Azure App Service Plans - Concept & Lab
+   * Azure App Service - Concept & Lab 
+   * Mini Project 2: Automating Creation of RG & VM on Azure using shell scripting
+### Day 7: Azure Storage Accounts & Recovery Vault Services
+  * Storage account
+     * Introduction, Purpose
+     * Azure Storage Services: Container & files
+     * Performance tier: Standard vs premium
+     * Access tier: Hot, cool, cold, and archive
+     * Replication Strategies - LRS,ZRS,GRS,RA-GRS,GZRS, RA-GZRS
+     * Lab: Container & File Share
+  * Recovery Services Vault
+  * Introduction, Use Cases, Features
+  * Lab: VM Recovery and File Recovery
+### Day 8: Azure Functions & Azure Data Lake
+   * Azure Functions
+      * Serverless vs PaaS
+      * Features
+      * Usecases
+      * Trigger types
+      * Lab: Http and timer trigger
+   * Azure Data Lake
+      * DB vs Data warehouse vs Data lake
+      * Features
+      * Use Cases
+      * Lab
+   * 
+  *  
+  * 

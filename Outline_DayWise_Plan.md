@@ -110,4 +110,12 @@
       * Features
       * Use Cases
       * Lab
-   
+### Day 9: NetApp & Azure NetApp
+   * What is NetApp
+      * Offerings
+      * Products
+      * Benefits
+   * Azure NetApp
+      * NetApp vs Azure NetApp
+      * Benefits
+     

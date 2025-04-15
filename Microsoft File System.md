@@ -159,7 +159,7 @@ Quotas are now enforced per user.
 ### Cleanup
 ---
 
-### 🔧 Steps to Delete Resource Group
+### Steps to Delete Resource Group
 
 1. Go to [https://portal.azure.com](https://portal.azure.com)
 

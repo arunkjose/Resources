@@ -118,4 +118,9 @@
    * Azure NetApp
       * NetApp vs Azure NetApp
       * Benefits
-     
+### Day 10: Microsoft File System
+   * What is a filesystem
+   * Filesystems in Windows
+   * Disk types
+   * Disk Partitioning
+   * Lab

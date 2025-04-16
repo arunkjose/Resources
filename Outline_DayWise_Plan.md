@@ -137,3 +137,14 @@
       * Devops - Definition, Principles: Collaboration, Automation, Metrics
       * CI/CD
       * Automation Tools
+
+### Day 11: Terraform & Ansible
+  * Terraform
+      * Introduction to IAC
+      * Terraform - Definition, Purpose, Features
+      * Terraform Architecture
+      * Terraform commands
+      * Terraform installation
+      * Concepts: Resources, Providers, State file
+      * HCL Syntax
+  * Ansible

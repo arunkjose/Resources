@@ -134,4 +134,6 @@
       * SDLC
       * Waterfall Model
       * Agile Methodology
-      * Devops - Definition, Principles
+      * Devops - Definition, Principles: Collaboration, Automation, Metrics
+      * CI/CD
+      * Automation Tools

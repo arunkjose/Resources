@@ -118,9 +118,20 @@
    * Azure NetApp
       * NetApp vs Azure NetApp
       * Benefits
-### Day 10: Microsoft File System
-   * What is a filesystem
-   * Filesystems in Windows
-   * Disk types
-   * Disk Partitioning
-   * Lab
+### Day 10: Microsoft File System & DevOps
+   * Windows
+      * Disk - Definition
+      * Disk types: HDD & SSD
+      * Disk Partition - Definition & Why
+      * Types of partitions - Primary, Extended, Logical
+      * Disk Partitioning Schemes - MBR & GPT
+      * FileSystem - Definition & Need
+      * Filesystem concepts: File, Folder, Path & Attributes
+      * Filesystems in Windows - FAT, NTFS, Refs
+      * NTFS Features
+      * Lab
+   * Introduction to DevOps
+      * SDLC
+      * Waterfall Model
+      * Agile Methodology
+      * Devops - Definition, Principles

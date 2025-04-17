@@ -20,7 +20,7 @@
 
 ## **PART 2 – SSH into the Control VM**
 
-From your local machine CMD or git bash 
+'From your local machine CMD or git bash'
 ---
 
 ## **PART 3 – Prepare the Control VM**

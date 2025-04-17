@@ -1,5 +1,5 @@
 ---
-## Use Ansible from a Control VM to Configure a Target Azure Linux VM**
+** Use Ansible from a Control VM to Configure a Target Azure Linux VM**
 ---
 
 ## **PART 1 – Provision the Target VM Using Azure Portal**

@@ -6,7 +6,7 @@ This guide will take you through all the steps needed to create, manage, verify,
 
 Create a directory named  and navigate.
   ```bash
-  mkdir ~/Labs && cd Labs && mkdir local-file-lab && cd local-file-lab
+  mkdir terraform_project && cd terraform_project 
 ```
 Create and open a new file named local-file.tf
 ```
@@ -17,7 +17,7 @@ Enter "INSERT" mode in vi by pressing the i key.
 Add the following content to the local-file.tf file:
 ```hcl
 resource "local_file" "myfile" {
-    filename = "/home/ubuntu/local-file-lab/test.txt"
+    filename = "/home/azureuser/test.txt"
     content  = "welcome to terraform"
 }
 ```
@@ -44,7 +44,7 @@ When prompted, type yes to confirm the changes. This will create the test.txt fi
 Once Terraform has applied the configuration, you should verify that the file has been created and that its content matches what was specified.
 Navigate to the /home/ubuntu directory and list the files
 ```bash
-cd /home/ubuntu/local-file-lab && ls
+cd /home/azureuser && ls
 ```
 Display the content of test.txt:
 ```
@@ -55,7 +55,7 @@ You should see the output `wel come to terraform`
 ### Step 4: Clean Up Resources
 Navigate back to the local-file-lab directory.
 ```
-cd /home/ubuntu/local-file-lab
+cd /home/azureuser
 ```
 Destroy the Terraform-managed resources:
 ```
@@ -64,9 +64,9 @@ terraform destroy
 When prompted, type yes to confirm. This command will delete the test.txt file.
 Navigate back to the home directory:
 ```
-cd ~/Labs
+cd ~
 ```
-Remove the loacl-file-lab directory:
+Remove the terraform_project directory:
 ```
-rm -rf local-file-lab
+rm -rf terraform_project
 ```

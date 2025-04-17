@@ -2,7 +2,7 @@
 ## Use Ansible from a Control VM to Configure a Target Azure Linux VM**
 ---
 
-##**PART 1 – Provision the Target VM Using Azure Portal**
+## **PART 1 – Provision the Target VM Using Azure Portal**
 
 1. Login to [https://portal.azure.com](https://portal.azure.com)
 2. Navigate to **Virtual Machines > + Create**

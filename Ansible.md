@@ -38,12 +38,12 @@ sudo apt install -y python3 python3-pip ansible
 ```
 
 ### Install Azure CLI:
-
+Note: If done already ignore and move to next step
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
-If done already ignore
-Verify Az login
+
+### Verify Az login
 ```
 az group list --output table
 ```

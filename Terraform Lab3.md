@@ -2,7 +2,7 @@
 
 Create a directory and navigate to it
 ```bash
-cd mkdir rg-lab && cd rg-lab
+mkdir rg-lab && cd rg-lab
 ```
 
 Open a new file named resource-group.tf for editing:

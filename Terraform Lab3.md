@@ -2,7 +2,7 @@
 
 Create a directory and navigate to it
 ```bash
-cd ~/Labs && mkdir rg-lab && cd rg-lab
+cd mkdir rg-lab && cd rg-lab
 ```
 
 Open a new file named resource-group.tf for editing:
@@ -48,5 +48,5 @@ terraform destroy
 ```
 Navigate back to the home directory and delete the folder:
 ```
-cd ~/Labs && rm -rf rg-lab
+cd ~ && rm -rf rg-lab
 ```

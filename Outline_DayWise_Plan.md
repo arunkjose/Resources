@@ -148,3 +148,14 @@
       * Concepts: Resources, Providers, State file
       * HCL Syntax
   * Ansible
+### Day 12: Containers & Docker
+  * Containers
+     * Definition
+     * VM vs Containers
+     * Terminologies: Container image, container registry, container runtime
+     * Advantages of using Containers
+  * Docker
+     * Definition, Purpose
+     * Architecture
+     * Docker Container lifecycle
+     * Docker commands

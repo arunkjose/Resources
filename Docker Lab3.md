@@ -98,3 +98,4 @@ docker image ls
 ```
 docker image ls -a
 ```
+CLeanup: Remove the resource group created for Docker vm

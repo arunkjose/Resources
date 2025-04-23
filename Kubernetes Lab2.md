@@ -1,9 +1,34 @@
-Lab 3 : Services in Kubernetes
+Lab 2 : Services in Kubernetes
 =============================================================
-
-## Check  Pod
+``` 
+vi httpd-pod1.yaml
+``` 
 ```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd-pod1
+  labels:
+    env: prod 
+    type: front-end
+    app: httpd-ws
+spec:
+  containers:
+  - name: httpd-container
+    image: httpd
+    ports:
+       - containerPort: 80
+ 
+ ```
+# Apply the pod definition yaml
+ ```
+kubectl apply -f httpd-pod1.yaml
+ ```
+ 
+# Check the newly created Pod
+ ```
 kubectl get pods
+ ```
 ```
 
 ----------------------------------------------------------------------
@@ -80,6 +105,8 @@ kubectl describe svc httpd-svc
 ```
 curl <Node-Public-IP>:NodePort
 ```
+![image](https://github.com/user-attachments/assets/7300acf2-918e-4b96-942b-f63a0be753c4)
+![image](https://github.com/user-attachments/assets/ca628839-ac17-4e36-9652-c68d8435a974)
 
 --------------------------------------------------------------------------------
 # Task 3 Cleanup the resources using below command

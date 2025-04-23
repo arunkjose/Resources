@@ -29,7 +29,6 @@ kubectl apply -f httpd-pod1.yaml
  ```
 kubectl get pods
  ```
-```
 
 ----------------------------------------------------------------------
 # Task 1  Setup ClusterIP service

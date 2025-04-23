@@ -1,4 +1,3 @@
-**Simple Kubernetes lab** to deploy **NGINX** and expose it via a **NodePort** service. This will let you access NGINX using your node's IP and the exposed port.
 
 ---
 

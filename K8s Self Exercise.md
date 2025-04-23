@@ -61,21 +61,10 @@ kubectl apply -f nginx-service.yaml
 
 #### **Step 4: Access NGINX via Browser or curl**
 
-Get your node IP (if using Minikube, use `minikube ip`):
-
-```bash
-kubectl get nodes -o wide
-```
-
-Then open this URL in your browser or use curl:
-
-```
-http://<NODE-IP>:30080
-```
 In killerkoda
 Go to traffic ports -> add the custom port: 30080
 
-Note: Killerkoda doesn't provide any Ip address
+Note: Killerkoda doesn't provide any IP address
 ---
 
 ### Check Everything
@@ -88,3 +77,10 @@ kubectl get svc
 You should see a pod running and the NodePort service exposing port 30080.
 
 ---
+### Cleanup
+```
+kubectl delete deploy nginx-deployment
+```
+```
+kubectl delete svc nginx-service
+```

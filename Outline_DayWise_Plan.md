@@ -165,12 +165,13 @@
    * Definition
    * Why Kubernetes? Need for orchestration
    * Kubernetes Architecture
-   * Kubernetes Cluster Setup (theory only) - Minikube, kubeadm, managed services (like AKS/EKS/GKE)
+   * Kubernetes Cluster (theory only) - Minikube, kubeadm,kops, managed services (like AKS/EKS/GKE)
    * Kubernetes Objects (Resources)
       * Pod (basic unit)
-      * Deployment (manages ReplicaSets and rollouts)
+      * Deployment (manages Replicas)
       * Service (ClusterIP, NodePort)
-   * Hands-On (if lab setup exists)
-      * Create a simple deployment (e.g., nginx)
-      * Expose it via a Service
+   * Hands-On
+      * Pod - Imperative & Declarative
+      * Deployment
+      * Services - ClusterIP & NodePort
 

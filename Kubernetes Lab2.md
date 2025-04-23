@@ -42,10 +42,6 @@ kubectl get svc
 ```
 kubectl describe svc httpd-svc
 ```
-## Get EndPoint of the service
-```
-kubectl get ep  
-```
 
 ------------------------------------------------------------------------------
 # Task 2  Setup NodePort Service
@@ -83,10 +79,6 @@ kubectl describe svc httpd-svc
 ## Validate connectivity using External IP on NodePort using below or via browser
 ```
 curl <Node-Public-IP>:NodePort
-```
-OR
-```
-curl <Service-IP>:NodePort
 ```
 
 --------------------------------------------------------------------------------

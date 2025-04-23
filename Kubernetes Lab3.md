@@ -18,8 +18,6 @@ metadata:
     app: nginx-dep
 spec:
   replicas: 3
-  strategy:
-    type: Recreate
   selector:
     matchLabels:
       app: nginx-app
@@ -44,41 +42,8 @@ kubectl apply -f dep-nginx.yaml
 ```
 kubectl get deployments
 ```
-------------------------------------------------------------------------------
-# Task 2: Scaling of Deployments
-------------------------------------------------------------------------------
-## View the number of Pod replicas created by the Deployment
-```
-kubectl get deployments
-```
-```
-kubectl get pods
-```
-## Scale up the deployment to have 8 Pod replicas
-```
-kubectl scale deployment nginx-dep --replicas=8
-```
-## Check the Pods and deployment to and verify that the number of Pod replicas are 8
-```
-kubectl get deployments
-```
-```
-kubectl get pods
-```
-## Scale down the deployments to 2 Pod replicas
-```
-kubectl scale deployment nginx-dep --replicas=2
-```
-## Check the Pods and deployment to and verify that the number of Pod replicas are down to 2
-```
-kubectl get deployments
-```
-```
-kubectl get pods
-```
-
 -----------------------------------------------------------------------------
-# Task 3 Cleanup the resources using command below
+# Task 2 Cleanup the resources using command below
 -----------------------------------------------------------------------------
 ## Delete the resources created during the lab:
 ```

@@ -68,7 +68,7 @@
 
 ---
 
-## Create Automation Rule for Auto-Closure**
+## Create Automation Rule for Auto-Closure
 
 1. Go to: **Project Settings → Automation**
 2. Click **Create Rule**

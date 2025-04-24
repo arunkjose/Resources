@@ -175,3 +175,12 @@
       * Deployment
       * Services - ClusterIP & NodePort
 
+### Day 14: Basic Ticket Knowledge on Solve
+  * What is a ticket
+  * Common ticket types
+  * Ticket Lifecycle
+  * SLA
+  * How to read and act on a ticket
+  * Best Practices
+  * Ticketing tools
+  * Demo

@@ -4,7 +4,7 @@
 
 ---
 
-## **Part 1: Create a Free Jira Account (5–10 mins)**
+## **Part 1: Create a Free Jira Account**
 
 1. Go to: [https://www.atlassian.com/software/jira/service-management](https://www.atlassian.com/software/jira/service-management)
 2. Click **“Get it free”**
@@ -17,7 +17,7 @@
 
 ---
 
-## **Part 2: Create Your First Service Project (10 mins)**
+## **Part 2: Create Your First Service Project**
 
 1. Click **Projects** → **Create Project**
 2. Choose **IT Service Management** template → Click **Use Template**
@@ -26,7 +26,7 @@
 
 ---
 
-## **Part 3: Create Sample Tickets (15 mins)**
+## **Part 3: Create Sample Tickets**
 
 ### Create 3 Sample Tickets:
 
@@ -43,7 +43,7 @@
 
 ---
 
-## **Part 4: Apply SLA Rules (15–20 mins)**
+## **Part 4: Apply SLA Rules**
 
 1. Go to `Project settings` → **SLAs**
 2. Click **Add SLA**
@@ -68,7 +68,7 @@
 
 ---
 
-## **Optional: Create Automation Rule for Auto-Closure (10 mins)**
+## Create Automation Rule for Auto-Closure**
 
 1. Go to: **Project Settings → Automation**
 2. Click **Create Rule**

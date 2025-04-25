@@ -1,7 +1,7 @@
 ---
 
 ## Phase 1: Provision Terraform Workstation (Azure Ubuntu VM)
-
+---
 > **Goal**: Set up a base VM on Azure that will act as both your **Terraform machine** and **Ansible control node**, and will also be the **target (localhost)** for Ansible tasks.
 
 ---
